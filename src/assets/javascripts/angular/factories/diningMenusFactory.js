@@ -13,7 +13,7 @@
       if (!data.dining_menus) {
         return;
       }
-      
+
       return data;
     };
 

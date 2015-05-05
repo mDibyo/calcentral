@@ -1,0 +1,68 @@
+{
+  "dining_menus": [
+    {
+      "name": "Crossroads",
+      "menus": {
+        "breakfast": [
+          "Organic eggs",
+          "Hash browns"
+        ],
+        "lunch": [
+          "Burgers",
+          "Fries"
+        ],
+        "dinner": [
+          "Rice and peas"
+        ]
+      }
+    },
+    {
+      "name": "Foothill",
+      "menus": {
+        "breakfast": [
+          "Organic eggs",
+          "Foothill special Hash browns"
+        ],
+        "lunch": [
+          "Burgers",
+          "Foothill Fries"
+        ],
+        "dinner": [
+          "Rice and peas from Foothill"
+        ]
+      }
+    },
+    {
+      "name": "Cafe 3",
+      "menus": {
+        "breakfast": [
+          "Organic eggs Cafe 3",
+          "Hash browns"
+        ],
+        "lunch": [
+          "Burgers",
+          "Fries 3"
+        ],
+        "dinner": [
+          "3 Rice grains and 3 peas"
+        ]
+      }
+    },
+    {
+      "name": "Clark Kerr",
+      "menus": {
+        "breakfast": [
+          "Organic eggs",
+          "Hash browns from far away"
+        ],
+        "lunch": [
+          "Burgers",
+          "Fries Kerr"
+        ],
+        "dinner": [
+          "Clark's Rice and peas"
+        ]
+      }
+    }
+  ]
+}

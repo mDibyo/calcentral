@@ -17,7 +17,8 @@
       'MyClasses::Merged',
       'MyGroups::Merged',
       'MyTasks::Merged',
-      'UpNext::MyUpNext'
+      'UpNext::MyUpNext',
+      'DiningMenus::Merged'
     ];
 
     /**
