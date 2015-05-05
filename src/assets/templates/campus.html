@@ -6,7 +6,17 @@
 
     <div class="cc-widget" data-ng-if="currentTopCategory">
       <div class="cc-widget-title">
-        <h2>Links</h2>
+        <h2>Cal 1 Card</h2>
+      </div>
+      <div data-ng-app="" data-ng-init="meal_points=56">
+        Your current balance: ${{ meal_points }}
+        <button ng-click="meal_points = meal_points+10">Add 10 meal points</button>
+      </div>
+    </div>
+
+    <div class="cc-widget" data-ng-if="currentTopCategory === 'Food & Housing'">
+      <div class="cc-widget-title">
+        <h2>Useful Links</h2>
       </div>
       <div data-ng-include="'campus_link_list.html'"></div>
     </div>
