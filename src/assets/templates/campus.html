@@ -14,13 +14,20 @@
       </div>
     </div>
 
-    <!--<div class="cc-widget" data-ng-if="currentTopCategory === 'Food & Housing'">-->
-      <!--<div class="cc-widget-title">-->
-        <!--<h2>Today's Menus</h2>-->
-      <!--</div>-->
+    <div class="cc-widget" data-ng-if="currentTopCategory === 'Food & Housing'" data-ng-controller="DiningMenusController">
+      <div class="cc-widget-title">
+        <h2>Today's Menus</h2>
+      </div>
       <!--<div data-ng-include="'campus_link_list.html'"></div>-->
-    <!--</div>-->
-    <div data-ng-include="'dining_locations.html'" data-ng-if="currentTopCategory === 'Food & Housing'"></div>
+      <div data-cc-spinner-directive>
+        <div data-ng-repeat="menu in diningMenus">
+          <div class="cc-widget-subtitle">
+            <h3 data-ng-bind="menu.location"></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--<div data-ng-include="'dining_menus.html'"></div>-->
 
     <div class="cc-widget" data-ng-if="currentTopCategory">
       <div class="cc-widget-title">

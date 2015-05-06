@@ -4,7 +4,7 @@
   /**
    * Dining Menus Factory
    */
-  angular.module('cancentral.factories').factory('diningLocationsFactory', function(apiService) {
+  angular.module('calcentral.factories').factory('diningMenusFactory', function(apiService) {
     var url = '/dummy/json/dining_menus.json';
 
     var parseMenus = function(xhr) {

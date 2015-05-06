@@ -4,8 +4,9 @@
   /**
    * Dining Locations Controller
    */
-  angular.module('calcentral.controllers').controller('DiningLocationsController', function(apiService, diningMenusFactory, $scope) {
+  angular.module('calcentral.controllers').controller('DiningMenusController', function(apiService, diningMenusFactory, $scope) {
     var bindScopes = function(diningMenus) {
+      $scope.diningMenusPresent = diningMenus.length
       $scope.diningMenus = diningMenus;
     };
 

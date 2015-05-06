@@ -1,7 +1,7 @@
 {
   "dining_menus": [
     {
-      "name": "Crossroads",
+      "location": "Crossroads",
       "menus": {
         "breakfast": [
           "Organic eggs",
@@ -17,7 +17,7 @@
       }
     },
     {
-      "name": "Foothill",
+      "location": "Foothill",
       "menus": {
         "breakfast": [
           "Organic eggs",
@@ -33,7 +33,7 @@
       }
     },
     {
-      "name": "Cafe 3",
+      "location": "Cafe 3",
       "menus": {
         "breakfast": [
           "Organic eggs Cafe 3",
@@ -49,7 +49,7 @@
       }
     },
     {
-      "name": "Clark Kerr",
+      "location": "Clark Kerr",
       "menus": {
         "breakfast": [
           "Organic eggs",
