@@ -4,13 +4,44 @@
 
     <h1 class="cc-heading-page-title" data-ng-bind="currentTopCategory"></h1>
 
+    <div class="cc-widget cc-cal1card" data-ng-controller="Cal1CardController" data-ng-if="api.user.profile.features.cal1card">
+      <div class="cc-widget-title cc-cal1card-logo">
+        <h2>Cal 1 Card</h2>
+      </div>
+      <div data-cc-spinner-directive>
+        <div class="cc-widget-text" data-ng-if="body" data-ng-bind="body"></div>
+        <ul class="cc-widget-list" data-ng-if="!body">
+          <li>
+            <div data-ng-if="mealpointsPlan" data-ng-init="meal_points = 56">
+              <div class="cc-cal1card-header">
+                <strong>Meal Plan</strong><span data-ng-if="mealpointsPlan"> &bull; </span><span data-ng-bind="mealpointsPlan"></span>
+              </div>
+              <div class="cc-cal1card-yourbalance">
+                Your current balance:
+              </div>
+              <span class="cc-left cc-cal1card-amount">{{ mealpoints }}</span> <span class="cc-cal1card-points">pts</span>
+              <a href="http://caldining.berkeley.edu" class="cc-right">Manage Your Points</a>
+              <!--<button ng-click="mealpoints = (parseFloat(mealpoints) + 10;">Add 10 meal points</button>-->
+            </div>
+            <div data-ng-if="!mealpointsPlan">
+              <div class="cc-cal1card-header">
+                <strong>You don't have a meal plan.</strong>
+              </div>
+              <a href="http://caldining.berkeley.edu">Learn more about Meal Plans</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
     <div class="cc-widget" data-ng-if="currentTopCategory === 'Food & Housing'">
       <div class="cc-widget-title">
         <h2>Cal 1 Card</h2>
       </div>
       <div data-ng-app="" data-ng-init="meal_points=56">
         Your current balance: ${{ meal_points }}
-        <button ng-click="meal_points = meal_points+10">Add 10 meal points</button>
+        <button ng-click="meal_points = meal_points + 10;">Add 10 meal points</button>
       </div>
     </div>
 
@@ -35,6 +66,8 @@
       </div>
       <div data-ng-include="'campus_link_list.html'"></div>
     </div>
+
+
 
   </div>
 
